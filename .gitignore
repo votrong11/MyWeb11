@@ -14,3 +14,7 @@ git push origin main
 git add index.html
 git commit -m "Docs: Cập nhật giao diện trang chủ chính theo bố cục bảng chia cột"
 git push origin main
+
+git add .
+git commit -m "Dat ten cac phan vung hoan thien"
+git push
