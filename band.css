@@ -1,0 +1,127 @@
+/* --- 1. HIỆU ỨNG CUỘN TOÀN TRANG --- */
+html {
+  scroll-behavior: smooth; /* Cuộn trang trơn tru khi nhấn Menu */
+  scroll-padding-top: 46px; /* Tránh bị menu đè lên chữ khi cuộn xuống */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* --- 2. CSS THANH MENU ĐEN (HEADER) --- */
+#phan-vung-header {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Dính chặt trên đỉnh màn hình */
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.menu-trai {
+  display: flex;
+}
+
+.muc-menu {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  display: block;
+  /* Hiệu ứng chuyển màu mượt mà khi di chuột qua */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Khi hover vào menu, đổi sang nền xám chữ đen */
+.muc-menu:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+/* Nút kính lúp bên phải */
+.nut-tim-kiem {
+  color: #ffffff;
+  padding: 14px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nut-tim-kiem:hover {
+  background-color: #f44336; /* Đổi nền đỏ rực khi di chuột vào */
+}
+
+/* --- 3. KHU VỰC NỘI DUNG CHÍNH --- */
+#phan-vung-noi-dung {
+  max-width: 800px;
+  margin: 46px auto 0 auto;
+  padding: 64px 16px;
+}
+
+.khoi-gioi-thieu {
+  text-align: center;
+}
+
+.tieu-de-lon {
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.tieu-de-nho {
+  margin: 15px 0;
+  opacity: 0.6;
+}
+
+.doan-van-mo-ta {
+  text-align: justify;
+  font-size: 15px;
+  color: #333;
+}
+
+/* --- 4. CHIA 3 CỘT THÀNH VIÊN VÀ HIỆU ỨNG ZOOM ẢNH --- */
+.khoi-hinh-anh {
+  display: flex; /* Dùng flexbox chia cột nằm ngang thay cho thẻ pre */
+  justify-content: space-around;
+  padding: 32px 0;
+}
+
+.cot-thanh-vien {
+  text-align: center;
+  width: 30%;
+}
+
+.ten-thanh-vien {
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+/* Khung bọc ảnh để khi ảnh to ra không bị tràn lấn chiếm không gian */
+.khung-chua-anh {
+  width: 65%;
+  margin: 0 auto;
+  overflow: hidden; /* Giữ ảnh luôn nằm gói gọn trong khung */
+  border-radius: 4px;
+}
+
+.anh-band {
+  width: 100%;
+  display: block;
+  filter: grayscale(30%); /* Hơi mờ xám nhẹ lúc bình thường */
+  /* Tạo hiệu ứng biến đổi (phóng to, đổi màu) kéo dài mượt mà trong 0.4 giây */
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* 🔥 HIỆU ỨNG CHUYỂN ĐỘNG CHÍNH: Rê chuột vào cột nào, ảnh phóng to và nét lên */
+.cot-thanh-vien:hover .anh-band {
+  transform: scale(1.12); /* Phóng to ảnh thêm 12% */
+  filter: grayscale(0%); /* Lấy lại màu gốc tươi sáng */
+  cursor: pointer;
+}
