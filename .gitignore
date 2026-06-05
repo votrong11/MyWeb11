@@ -18,3 +18,7 @@ git push origin main
 git add .
 git commit -m "Dat ten cac phan vung hoan thien"
 git push
+
+git add README.md
+git commit -m "Cap nhat code vao file README chinh"
+git push
