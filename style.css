@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* ĐÂY LÀ CHỖ QUAN TRỌNG: body phải có display: flex để chia 2 cột dọc */
+body {
+  display: flex; 
+  min-height: 100vh;
+}
+
+/* Vùng menu bên trái */
+#vung01 {
+  width: 250px;
+  background-color: #f0f0f0;
+  border-right: 1px solid #000;
+}
+
+#vung01 ul {
+  list-style-type: none; /* KHÔNG ĐƯỢC có display: flex ở đây */
+}
+
+#vung01 li {
+  padding: 12px 20px;
+  font-size: 18px;
+}
+
+#vung01 ul li:first-child {
+  background-color: #7f7f7f;
+  color: #ffffff;
+}
+
+/* Vùng nội dung bên phải */
+#vung02 {
+  flex: 1;
+  padding: 40px;
+}
+
+#vung02 h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+#vung02 h3 {
+  margin-bottom: 15px;
+}
+
+#vung02 ol {
+  padding-left: 40px;
+}
+
+#vung02 ol li {
+  margin-bottom: 8px;
+}
