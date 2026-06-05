@@ -1,18 +1,18 @@
-// Xử lý sự kiện click ẩn/hiện lời khuyên hữu ích về URL
+// Xử lý sự kiện click ẩn/hiện hộp mẹo vặt của Mini-Project 2
 document.addEventListener('DOMContentLoaded', () => {
-    const btnTip = document.getElementById('btn-tip');
-    const tipContent = document.getElementById('tip-content');
+    const btnShowTip = document.getElementById('btn-show-tip');
+    const tipBox = document.getElementById('tip-box');
 
-    btnTip.addEventListener('click', () => {
-        // Kiểm tra xem hộp thoại đang ẩn hay hiện để chuyển đổi trạng thái
-        if (tipContent.classList.contains('hidden')) {
-            tipContent.classList.remove('hidden');
-            btnTip.textContent = 'Ẩn lời khuyên';
-            btnTip.style.backgroundColor = '#64748b'; // Đổi màu nút sang màu xám
+    btnShowTip.addEventListener('click', () => {
+        // Kiểm tra className hiện tại của hộp thông tin để hoán đổi
+        if (tipBox.className === 'tip-hidden') {
+            tipBox.className = 'tip-show';
+            btnShowTip.textContent = 'Ẩn mẹo thiết kế URL';
+            btnShowTip.style.backgroundColor = '#64748b'; // Đổi nút sang màu xám
         } else {
-            tipContent.classList.add('hidden');
-            btnTip.textContent = 'Xem lời khuyên về URL';
-            btnTip.style.backgroundColor = '#2563eb'; // Trở về màu xanh mặc định
+            tipBox.className = 'tip-hidden';
+            btnShowTip.textContent = 'Bấm để xem mẹo thiết kế URL';
+            btnShowTip.style.backgroundColor = '#2563eb'; // Trở về màu xanh mặc định
         }
     });
 });
