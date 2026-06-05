@@ -3,52 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Band - Phiên bản HTML5 Thuần</title>
+  <title>The Band - Kính Lúp Trắng Tinh Tế</title>
+  <link rel="stylesheet" href="band.css">
 </head>
 <body>
 
-  <nav id="phan-vung-header" align="center">
-    <h3>
-      <span class="muc-menu">HOME</span>   |   
-      <span class="muc-menu">BAND</span>   |   
-      <span class="muc-menu">TOUR</span>   |   
-      <span class="muc-menu">CONTACT</span>   |   
-      <span class="muc-menu">MORE ▾</span>
-    </h3>
-  </nav>
-  
-  <hr color="black" size="3"> 
-
-  <main id="phan-vung-noi-dung" align="center">
+  <nav id="phan-vung-header">
+    <div class="menu-trai">
+      <a href="#" class="muc-menu">HOME</a>
+      <a href="#" class="muc-menu">BAND</a>
+      <a href="#" class="muc-menu">TOUR</a>
+      <a href="#" class="muc-menu">CONTACT</a>
+      <a href="#" class="muc-menu">MORE ▾</a>
+    </div>
     
+    <div class="o-tim-kiem">
+      <svg class="kinh-lup-svg" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      
+      <span class="chu-search">Search</span>
+    </div>
+  </nav>
+
+  <main id="phan-vung-noi-dung">
     <section class="khoi-gioi-thieu">
-      <br>
-      <h1>THE BAND</h1>
-      <p><i>We love music</i></p>
-      <br>
+      <h1 class="tieu-de-lon">THE BAND</h1>
+      <p class="tieu-de-nho"><i>We love music</i></p>
+      
+      <div class="khung-chuyen-doi-ngon-ngu">
+        <p class="doan-van tieng-anh">
+          We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+          anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
 
-      <p align="justify">
-        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-        anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
+        <p class="doan-van tieng-viet">
+          Chúng tôi đã tạo ra một trang web dành cho một ban nhạc giả tưởng. Bản thân chúng tôi là những người cực kỳ đam mê âm nhạc. Chúng tôi luôn mong muốn đem đến những giai điệu tuyệt vời nhất cho thính giả thông qua từng nốt nhạc và lời ca. Dự án này được thiết kế nhằm mục đích mô phỏng lại không gian âm nhạc sống động ấy, giúp người hâm mộ dễ dàng cập nhật thông tin về lịch trình lưu diễn, các thành viên trong nhóm cũng như kết nối niềm đam mê âm nhạc bất tận trên toàn cầu.
+        </p>
+      </div>
     </section>
-
-    <br><br>
 
     <section class="khoi-hinh-anh">
-      <pre>
-        <span class="ten-thanh-vien">Name</span>                               <span class="ten-thanh-vien">Name</span>                               <span class="ten-thanh-vien">Name</span>
-      </pre>
+      <div class="cot-thanh-vien">
+        <p class="ten-thanh-vien">Name</p>
+        <div class="khung-chua-anh">
+          <img class="anh-band" src="https://www.w3schools.com/w3css/img_bandmember.jpg" alt="Member">
+        </div>
+      </div>
 
-      <img class="anh-band" src="https://www.w3schools.com/w3css/img_bandmember.jpg" width="150" hspace="40">
-      <img class="anh-band" src="https://www.w3schools.com/w3css/img_bandmember.jpg" width="150" hspace="40">
-      <img class="anh-band" src="https://www.w3schools.com/w3css/img_bandmember.jpg" width="150" hspace="40">
+      <div class="cot-thanh-vien">
+        <p class="ten-thanh-vien">Name</p>
+        <div class="khung-chua-anh">
+          <img class="anh-band" src="https://www.w3schools.com/w3css/img_bandmember.jpg" alt="Member">
+        </div>
+      </div>
+
+      <div class="cot-thanh-vien">
+        <p class="ten-thanh-vien">Name</p>
+        <div class="khung-chua-anh">
+          <img class="anh-band" src="https://www.w3schools.com/w3css/img_bandmember.jpg" alt="Member">
+        </div>
+      </div>
     </section>
-
   </main>
 
 </body>
