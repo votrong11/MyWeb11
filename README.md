@@ -54,7 +54,7 @@
 
 ### 🔗 Dự án 2: Website nhập môn Web căn bản (Mini-project 1) & (Mini-project 2)
 * **Xem sản phẩm Mini-project 1:** [Bấm vào đây để xem trang Web căn bản](https://votrong11.github.io/MyWeb/)
-* **Xem sản phẩm Mini-project 2:** [Bấm vào đây để xem trang URL Explorer](https://votrong11.github.io/MyWeb7/)
+* **Xem sản phẩm Mini-project 2:** [Bấm vào đây để xem trang URL Explorer](https://votrong11.github.io/MyWeb/)
 
 ---
 
