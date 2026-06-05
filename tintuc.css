@@ -1,0 +1,18 @@
+body { margin: 0; font-family: Arial, sans-serif; }
+
+#vung-header { background: #4CAF50; padding: 10px 20px; display: flex; color: #fff; align-items: center; }
+#vung-header a { color: #fff; text-decoration: none; margin-right: 20px; font-weight: bold; }
+
+#vung-chinh { display: flex; max-width: 1200px; margin: 20px auto; gap: 20px; padding: 0 10px; }
+#cot-trai, #cot-giua { flex: 1; }
+#cot-trai img, #cot-giua img { width: 100%; height: 200px; object-fit: cover; }
+
+/* Cột phải: Viền xanh, nền xám, tiêu đề chuẩn */
+#cot-phai { width: 300px; border: 2px solid #b6e2b8; padding: 10px; background: #fdfdfd; }
+#cot-phai h3 { margin: 0 0 10px 0; font-size: 14px; text-align: center; border-bottom: 2px solid #4CAF50; padding-bottom: 10px; }
+
+/* Tin nhỏ trong cột phải */
+.tin-nho { display: flex; gap: 10px; margin-bottom: 15px; }
+.tin-nho img { width: 80px; height: 50px; object-fit: cover; }
+.tin-nho h4 { font-size: 13px; margin: 0 0 5px 0; }
+.tin-nho p { font-size: 11px; color: #888; margin: 0; }
