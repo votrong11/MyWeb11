@@ -15,25 +15,30 @@
 
 ---
 
-## 🚀 2. Mini-Project 1: Website Nhập Môn Web Căn Bản
+## 🚀 2. Tổng Quan Các Mini-Project Thực Hành
 
-### 🎯 Mục tiêu của dự án này
+### 🌐 Mini-Project 1: Website Nhập Môn Web Căn Bản
 * **Về kiến thức:** Hệ thống hóa và trình bày rõ ràng các khái niệm cốt lõi ban đầu của ngành Web bao gồm: *Internet, Web (WWW), Website, Trang web (Web page), Browser (Trình duyệt)*, và *Server (Máy chủ)*.
-* **Về kỹ năng:** * Tự tay xây dựng cấu trúc trang bằng HTML5, thiết kế giao diện bằng CSS3 (Grid/Flexbox) giúp trang hiển thị tốt trên cả máy tính lẫn điện thoại.
-  * Ứng dụng JavaScript cơ bản để tạo hiệu ứng tương tác (ẩn/hiện thông điệp) trực tiếp trên trang.
-  * Thành thạo quy trình khởi tạo repository, quản lý phiên bản bằng Git và đưa trang web lên môi trường Internet thực tế qua **GitHub Pages**.
+* **Về kỹ năng:** * Tự tay xây dựng cấu trúc trang bằng HTML5, thiết kế giao diện bằng CSS3 (Grid/Flexbox) giúp trang hiển thị tốt trên cả máy tính lẫn điện thoại (Responsive).
+  * Ứng dụng JavaScript cơ bản để tạo hiệu ứng tương tác (ẩn/hiện thông điệp chào mừng) trực tiếp trên trang.
+
+### 🔗 Mini-Project 2: Website URL Explorer Tĩnh
+* **Về kiến thức:** Đi sâu vào tìm hiểu hạ tầng mạng thực tế thông qua các khái niệm về *Domain (Tên miền)*, *Hosting (Lưu trữ mạng)*, và bóc tách chi tiết từng thành phần cấu thành một cấu trúc đường dẫn *URL mẫu* (Protocol, Subdomain, Domain, Path, Query String, Fragment).
+* **Về kỹ năng:**
+  * Xây dựng giao diện trực quan hóa, áp dụng kỹ thuật CSS nâng cao để tạo hệ thống **Tooltip** tự động hiển thị chú thích khi di chuột qua các thành phần của URL.
+  * Tích hợp JavaScript xử lý sự kiện click động bật/tắt hộp thông tin mẹo vặt tối ưu chuẩn SEO.
 
 ### 📁 Cấu trúc thư mục của Repository
-* `index.html`: Cổng kết nối và điều hướng trung tâm của toàn bộ dự án.
-* `index1.html`: Giao diện chính hiển thị nội dung 6 khái niệm nền tảng (Project 1).
-* `index2.html`: Giao diện chính hiển thị nội dung cấu trúc URL Explorer (Project 2).
-* `css/`: Thư mục chứa các file giao diện `style.css`, `style1.css`, `style2.css`.
+* `index.html`: Cổng kết nối và trang chủ điều hướng trung tâm của toàn bộ dự án.
+* `index1.html`: Giao diện hiển thị nội dung 6 khái niệm nền tảng (Mini-Project 1).
+* `index2.html`: Giao diện hiển thị nội dung cấu trúc URL Explorer (Mini-Project 2).
+* `css/`: Thư mục chứa các file giao diện biệt lập `style.css`, `style1.css`, `style2.css`.
 * `js/`: Thư mục chứa các file logic tương tác `script.js`, `script1.js`, `script2.js`.
 * `README.md`: Tài liệu tích hợp thông tin cá nhân và báo cáo dự án này.
 
 ---
 
-## 📊 3. Kết Quả Học Tập & Kỹ Năng Tích Lũy
+## 📊 3. Kết Quả Học Tập & Kỹ Kỹ Năng Tích Lũy
 
 ### Đang trong quá trình học tập và rèn luyện tại trường:
 
@@ -61,7 +66,7 @@
 
 ---
 
-## 🎯 5. Mục Tiêu Học Tập Tiếp Theo
+## 🎯 5. Mục Tiêu Học Tập Tiếp Next
 * [x] Đã hoàn thành Mini-project 1 và biết cách cấu hình chính xác GitHub Pages.
 * [x] Đã hoàn thành Mini-project 2 và phân tách cấu trúc liên kết trang chủ thành công.
 * [ ] Nắm vững kiến thức nâng cao về JavaScript để xử lý logic web tốt hơn.
