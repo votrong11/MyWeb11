@@ -1,17 +1,15 @@
-// Đợi DOM tải xong hoàn toàn
+// Xử lý logic ẩn/hiện thông điệp cho Mini-Project 1
 document.addEventListener('DOMContentLoaded', () => {
-  const btnWelcome = document.getElementById('btn-welcome');
-  const welcomeMessage = document.getElementById('welcome-message');
+    const btnMessage = document.getElementById('btn-message');
+    const welcomeText = document.getElementById('welcome-text');
 
-  // Lắng nghe sự kiện click chuột vào button
-  btnWelcome.addEventListener('click', () => {
-    // Ẩn/hiện dòng thông điệp chào mừng
-    if (welcomeMessage.classList.contains('hidden')) {
-      welcomeMessage.classList.remove('hidden');
-      btnWelcome.textContent = "Ẩn thông điệp";
-    } else {
-      welcomeMessage.classList.add('hidden');
-      btnWelcome.textContent = "Bấm vào đây để xem thông điệp!";
-    }
-  });
+    btnMessage.addEventListener('click', () => {
+        if (welcomeText.className === 'hidden-text') {
+            welcomeText.className = 'show-text';
+            btnMessage.textContent = 'Ẩn thông điệp';
+        } else {
+            welcomeText.className = 'hidden-text';
+            btnMessage.textContent = 'Nhập để xem thông điệp chào mừng';
+        }
+    });
 });
