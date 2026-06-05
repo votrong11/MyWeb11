@@ -60,7 +60,7 @@
 
 
 ### 🔗 Dự án 2: Website nhập môn Web căn bản (Mini-project 1) & (Mini-project 2)
-* **Xem trang chủ kết nối chính:** [Bấm vào đây để vào Trang Tổng Hợp Sản Phẩm](https://votrong11.github.io/MyWeb11/)
+* **Bài Tập:** [Bấm vào đây để vào Trang Tổng Hợp Sản Phẩm](https://votrong11.github.io/MyWeb11/)
 * **Xem trực tiếp Mini-project 1:** [Bấm vào đây để xem trang Web căn bản](https://votrong11.github.io/MyWeb11/index1.html)
 * **Xem trực tiếp Mini-project 2:** [Bấm vào đây để xem trang URL Explorer](https://votrong11.github.io/MyWeb11/index2.html)
 
