@@ -3,61 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nhập môn Web Căn Bản</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Mini-Project 1: Nhập Môn Web Căn Bản</title>
+  <link rel="stylesheet" href="css/style1.css">
 </head>
 <body>
 
   <header>
-    <h1>Khám Phá Thế Giới Web</h1>
-    <p>Mini-project 1: Tìm hiểu các khái niệm cơ bản về Internet và Website</p>
+    <div class="container">
+      <h1>🌐 Nhập Môn Web Căn Bản</h1>
+      <p>Mini-Project 1: Hệ thống hóa 6 khái niệm nền tảng của ngành Web</p>
+    </div>
   </header>
 
   <main class="container">
-    <section class="concept-grid">
+    <div class="grid-3">
       
-      <div class="card" id="internet">
-        <h2>1. Internet</h2>
-        <p>Là một hệ thống thông tin toàn cầu có thể được truy cập công cộng gồm các mạng máy tính được liên kết với nhau. Nó truyền dữ liệu bằng cách sử dụng giao thức IP (Internet Protocol).</p>
+      <div class="concept-card">
+        <div class="badge">01</div>
+        <h3>Internet</h3>
+        <p>Là mạng lưới thông tin toàn cầu kết nối hàng triệu máy tính lại với nhau. Đây là hạ tầng phần cứng giúp các thiết bị trên thế giới có thể tìm thấy và trao đổi dữ liệu qua lại.</p>
       </div>
 
-      <div class="card" id="web">
-        <h2>2. Web (World Wide Web / WWW)</h2>
-        <p>Là một không gian thông tin toàn cầu nơi các tài liệu và các tài nguyên mạng khác được xác định bằng các URL, liên kết với nhau bằng các siêu văn bản (hyperlink) và truy cập qua Internet.</p>
+      <div class="concept-card">
+        <div class="badge">02</div>
+        <h3>Web (WWW)</h3>
+        <p>World Wide Web là một không gian thông tin toàn cầu chạy trên hạ tầng Internet, nơi các tài liệu, trang web và tài nguyên được định danh bằng các đường dẫn liên kết.</p>
       </div>
 
-      <div class="card" id="website">
-        <h2>3. Website</h2>
-        <p>Là một tập hợp các trang web (web pages) bao gồm văn bản, hình ảnh, video... thường chỉ nằm trong một tên miền (domain name) hoặc tên miền phụ trên mạng Internet.</p>
+      <div class="concept-card">
+        <div class="badge">03</div>
+        <h3>Website</h3>
+        <p>Là một tập hợp các trang web con (Web pages) bao gồm văn bản, hình ảnh, video... được lưu trữ chung trên một máy chủ và truy cập thông qua một tên miền (Domain) duy nhất.</p>
       </div>
 
-      <div class="card" id="trang-web">
-        <h2>4. Trang web (Web Page)</h2>
-        <p>Là một tệp tin đơn lẻ (thường được viết bằng HTML) hiển thị trên trình duyệt. Một website là sự tập hợp của nhiều trang web liên kết lại với nhau.</p>
+      <div class="concept-card">
+        <div class="badge">04</div>
+        <h3>Trang web (Web page)</h3>
+        <p>Là một file tài liệu đơn lẻ (thường được viết bằng mã HTML) nằm trong một website. Mỗi trang web con này sẽ đảm nhận hiển thị một nội dung cụ thể cho người dùng đọc.</p>
       </div>
 
-      <div class="card" id="browser">
-        <h2>5. Browser (Trình duyệt)</h2>
-        <p>Là một ứng dụng phần mềm giúp người dùng truy cập, hiển thị và tương tác với các thông tin trên World Wide Web (ví dụ: Google Chrome, Microsoft Edge, Safari, Firefox).</p>
+      <div class="concept-card">
+        <div class="badge">05</div>
+        <h3>Browser (Trình duyệt)</h3>
+        <p>Là phần mềm ứng dụng cài trên máy tính/điện thoại (như Chrome, Edge, Safari...) giúp dịch mã nguồn HTML/CSS/JS thành giao diện hình ảnh trực quan để con người có thể đọc được.</p>
       </div>
 
-      <div class="card" id="server">
-        <h2>6. Server (Máy chủ Web)</h2>
-        <p>Là một máy tính lớn chứa các tệp nguồn của website (HTML, CSS, ảnh...) và luôn chạy 24/7 để "phục vụ" (gửi dữ liệu về) khi có trình duyệt của người dùng gửi yêu cầu.</p>
+      <div class="concept-card">
+        <div class="badge">06</div>
+        <h3>Server (Máy chủ Web)</h3>
+        <p>Là một máy tính có cấu hình phần cứng cực mạnh, kết nối mạng Internet tốc độ cao 24/7, chuyên dùng để lưu trữ và "phục vụ" (gửi dữ liệu) website đến trình duyệt khi có yêu cầu.</p>
       </div>
 
-    </section>
+    </div>
 
-    <div class="interactive-zone">
-      <button id="btn-welcome">Bấm vào đây để xem thông điệp!</button>
-      <p id="welcome-message" class="hidden">Chúc bạn có một hành trình học Lập trình Web thật thú vị và thành công! 🚀</p>
+    <div class="action-section">
+      <button id="btn-message" class="btn-primary">Nhấp để xem thông điệp chào mừng</button>
+      <p id="welcome-text" class="hidden-text">🎉 Xin chào thầy cô! Đây là bài thực hành Mini-Project 1 về các khái niệm Web căn bản của sinh viên Võ Văn Trọng.</p>
     </div>
   </main>
 
   <footer>
-    <p>© 2026 - Dự án được thực hiện bởi Học Viên Nhập Môn Web</p>
+    <div class="container">
+      <p><a href="index.html" class="back-home">← Quay lại Trang Chủ Chính Điều Hướng</a></p>
+    </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/script1.js"></script>
 </body>
 </html>
