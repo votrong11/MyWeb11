@@ -1,3 +1,4 @@
-git add README.md
-git commit -m "Docs: Cập nhật đúng đường link GitHub Pages tài khoản votrong11"
+git add .
+git commit -m "Feat: Hoàn thành cấu trúc dự án 3 file HTML chính và phụ"
+git pull origin main --rebase
 git push origin main
