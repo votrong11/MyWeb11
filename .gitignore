@@ -10,3 +10,7 @@ git push origin main
 git add README.md
 git commit -m "Docs: Cập nhật đường link chính thức sang kho lưu trữ MyWeb11"
 git push origin main
+
+git add index.html
+git commit -m "Docs: Cập nhật giao diện trang chủ chính theo bố cục bảng chia cột"
+git push origin main
