@@ -2,3 +2,11 @@ git add .
 git commit -m "Feat: Hoàn thành cấu trúc dự án 3 file HTML chính và phụ"
 git pull origin main --rebase
 git push origin main
+
+git add .
+git commit -m "Feat: Viết hoàn chỉnh toàn bộ mã nguồn bài tập Mini-project 2"
+git push origin main
+
+git add README.md
+git commit -m "Docs: Cập nhật đường link chính thức sang kho lưu trữ MyWeb11"
+git push origin main
