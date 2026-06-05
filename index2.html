@@ -3,93 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini-project 2: URL Explorer tĩnh</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Mini-Project 2: URL Explorer Tĩnh</title>
+  <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
 
   <header>
     <div class="container">
-      <h1>🌐 URL Explorer Tĩnh</h1>
-      <p>Mini-project 2: Khám phá thế giới Domain, Hosting và Cấu trúc URL</p>
+      <h1>🔗 URL Explorer Tĩnh</h1>
+      <p>Mini-Project 2: Tìm hiểu hạ tầng mạng qua Domain, Hosting và cấu trúc chi tiết của URL</p>
     </div>
   </header>
 
   <main class="container">
-    <section class="card animate-fade">
-      <h2>📚 1. Các Khái Niệm Cốt Lõi</h2>
+    <section class="card">
+      <h2>📚 1. Các Khái Niệm Hạ Tầng Cốt Lõi</h2>
       <div class="grid-3">
-        <div class="concept-box">
+        <div class="info-box border-domain">
           <div class="icon">🏷️</div>
           <h3>Domain (Tên miền)</h3>
-          <p>Là địa chỉ định danh bằng chữ thay thế cho dãy số IP khô khan của máy chủ, giúp người dùng dễ dàng ghi nhớ để truy cập website (Ví dụ: <code>google.com</code>, <code>github.com</code>).</p>
+          <p>Là tên gọi định danh dễ nhớ thay thế cho các địa chỉ IP dạng số khô khan của máy chủ (Ví dụ: <code>google.com</code>, <code>github.com</code>). Giúp người dùng truy cập web dễ dàng hơn.</p>
         </div>
-        <div class="concept-box">
+        <div class="info-box border-hosting">
           <div class="icon">🏠</div>
           <h3>Hosting (Lưu trữ)</h3>
-          <p>Là không gian lưu trữ trực tuyến trên máy chủ (Server) luôn kết nối Internet 24/7. Nơi chứa toàn bộ mã nguồn mã HTML/CSS/JS, hình ảnh và dữ liệu của website để bất kỳ ai cũng có thể truy cập.</p>
+          <p>Là không gian lưu trữ dữ liệu trực tuyến trên các máy chủ luôn bật và kết nối Internet 24/7. Đây là nơi chứa toàn bộ mã nguồn HTML/CSS/JS, hình ảnh và cơ sở dữ liệu của website.</p>
         </div>
-        <div class="concept-box">
+        <div class="info-box border-url">
           <div class="icon">🔗</div>
           <h3>URL (Đường dẫn)</h3>
-          <p>Viết tắt của <em>Uniform Resource Locator</em>. Đây là địa chỉ định danh duy nhất của một tài nguyên cụ thể (trang web, hình ảnh, bài viết) trên mạng Internet.</p>
+          <p>Viết tắt của <em>Uniform Resource Locator</em>. Là địa chỉ duy nhất dùng để định vị một tài nguyên cụ thể (một trang web, một bài viết, một tấm ảnh) trên môi trường Internet.</p>
         </div>
       </div>
     </section>
 
-    <section class="card animate-fade delay-1">
+    <section class="card">
       <h2>🔍 2. Phân Tích Cấu Trúc URL Trực Quan</h2>
-      <p>Rê chuột hoặc chạm vào các thành phần được tô màu để xem giải thích chi tiết chức năng của từng bộ phận.</p>
+      <p class="sub-text">* Rê chuột (hoặc chạm trên điện thoại) vào từng phần được tô màu để xem giải thích chi tiết chức năng.</p>
 
-      <div class="url-example">
-        <h3>Ví dụ 1: URL Trang sản phẩm (Thương mại điện tử)</h3>
-        <div class="url-bar">
-          <span class="url-part protocol" data-tooltip="Protocol (Giao thức): Phương thức truyền tải dữ liệu an toàn mã hóa giữa trình duyệt và máy chủ.">https://</span>
-          <span class="url-part domain" data-tooltip="Domain (Tên miền): Địa chỉ chính của website giúp định danh thương hiệu.">shopee.vn</span>
-          <span class="url-part path" data-tooltip="Path (Đường dẫn): Dẫn tới danh mục điện thoại hoặc một tài nguyên cụ thể trên máy chủ.">/dien-thoai</span>
-          <span class="url-part query" data-tooltip="Query String (Tham số tìm kiếm): Bộ lọc thông tin, ở đây lọc các sản phẩm có màu xanh.">?color=blue</span>
+      <div class="url-block">
+        <h4>Ví dụ 1: URL Trang sản phẩm (Thương mại điện tử)</h4>
+        <div class="url-display">
+          <span class="part p-protocol" data-tip="Protocol (Giao thức): HTTPS mã hóa bảo mật truyền tải dữ liệu an toàn giữa trình duyệt và máy chủ.">https://</span>
+          <span class="part p-domain" data-tip="Domain (Tên miền chính): Địa chỉ thương hiệu đã đăng ký của website.">shopee.vn</span>
+          <span class="part p-path" data-tip="Path (Đường dẫn): Trỏ tới thư mục hoặc danh mục hàng hóa cụ thể trên máy chủ.">/dien-thoai</span>
+          <span class="part p-query" data-tip="Query String (Tham số truy vấn): Dùng để lọc dữ liệu hiển thị, ở đây lọc các sản phẩm màu xanh.">?color=blue</span>
         </div>
       </div>
 
-      <div class="url-example">
-        <h3>Ví dụ 2: URL Bài viết học thuật (Blog/Tin tức)</h3>
-        <div class="url-bar">
-          <span class="url-part protocol" data-tooltip="Protocol (Giao thức): HTTPS là tiêu chuẩn bắt buộc cho mọi website hiện nay.">https://</span>
-          <span class="url-part subdomain" data-tooltip="Subdomain (Tên miền phụ): Một nhánh con tách biệt thuộc tên miền chính.">blog.</span>
-          <span class="url-part domain" data-tooltip="Domain (Tên miền chính): Tên miền gốc đã được đăng ký sở hữu.">techacademy.edu</span>
-          <span class="url-part path" data-tooltip="Path (Đường dẫn): Đường dẫn thân thiện (Slug) trỏ đến bài viết hướng dẫn học HTML.">/huong-dan-hoc-html</span>
-          <span class="url-part fragment" data-tooltip="Fragment (Neo trang): Cuộn nhanh người dùng xuống ngay mục phần số 2 của bài viết mà không cần kéo chuột.">#phan-2</span>
+      <div class="url-block">
+        <h4>Ví dụ 2: URL Bài viết hướng dẫn (Blog/Tin tức)</h4>
+        <div class="url-display">
+          <span class="part p-protocol" data-tip="Protocol (Giao thức truyền tải): HTTPS an toàn dữ liệu.">https://</span>
+          <span class="part p-subdomain" data-tip="Subdomain (Tên miền phụ): Nhánh con riêng biệt thuộc quản lý của tên miền chính.">blog.</span>
+          <span class="part p-domain" data-tip="Domain (Tên miền gốc): Tên miền chính của tổ chức giáo dục.">techacademy.edu</span>
+          <span class="part p-path" data-tip="Path (Đường dẫn bài viết): Dẫn đến trang nội dung hướng dẫn học HTML cơ bản.">/huong-dan-html</span>
+          <span class="part p-fragment" data-tip="Fragment (Neo trang): Cuộn màn hình nhanh đến vị trí thẻ tiêu đề phần số 2 của bài viết.">#phan-2</span>
         </div>
       </div>
 
       <div class="legend">
-        <h4>Chú thích thành phần:</h4>
+        <h5>Bảng giải nghĩa nhanh:</h5>
         <div class="legend-flex">
-          <span class="lg-item protocol">Giao thức (Protocol)</span>
-          <span class="lg-item subdomain">Tên miền phụ (Subdomain)</span>
-          <span class="lg-item domain">Tên miền (Domain)</span>
-          <span class="lg-item path">Đường dẫn (Path)</span>
-          <span class="lg-item query">Tham số (Query)</span>
-          <span class="lg-item fragment">Neo trang (Fragment)</span>
+          <span class="lg-item bg-protocol">Giao thức</span>
+          <span class="lg-item bg-subdomain">Tên miền phụ</span>
+          <span class="lg-item bg-domain">Tên miền chính</span>
+          <span class="lg-item bg-path">Đường dẫn</span>
+          <span class="lg-item bg-query">Tham số</span>
+          <span class="lg-item bg-fragment">Neo trang</span>
         </div>
       </div>
     </section>
 
-    <section class="card text-center animate-fade delay-2">
+    <section class="card text-center">
       <h2>💡 Trải Nghiệm Tương Tác</h2>
-      <p>Nhấp vào nút bên dưới để xem một lời khuyên nhỏ khi bạn thiết kế URL cho website cá nhân.</p>
-      <button id="btn-tip" class="btn">Xem lời khuyên về URL</button>
-      <p id="tip-content" class="tip-box hidden">🌟 <strong>Lời khuyên:</strong> Hãy luôn thiết kế URL dạng "Sạch" (Clean URL), ngắn gọn, sử dụng dấu gạch ngang <code>-</code> thay vì dấu gạch dưới <code>_</code> và chứa từ khóa tìm kiếm để tối ưu SEO tốt nhất nhé!</p>
+      <button id="btn-show-tip" class="action-btn">Bấm để xem mẹo thiết kế URL</button>
+      <div id="tip-box" class="tip-hidden">
+        🚀 <strong>Lời khuyên chuẩn SEO:</strong> Hãy luôn thiết kế cấu trúc URL dạng "Sạch" (Clean URL), ngắn gọn, viết liền không dấu và dùng dấu gạch ngang (<code>-</code>) để phân tách các từ thay vì dùng dấu gạch dưới (<code>_</code>) nhé!
+      </div>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>© 2026 - Thiết kế bởi Sinh viên: <strong>Võ Văn Trọng</strong> - MSSV: CD-CDCNTT19A38</p>
-      <p>Trường Cao Đẳng Kỹ Thuật Công Nghệ Nha Trang</p>
+      <p><a href="index.html" class="back-home">← Quay lại Trang Chủ Chính Điều Hướng</a></p>
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/script2.js"></script>
 </body>
 </html>
