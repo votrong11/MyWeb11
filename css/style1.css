@@ -1,111 +1,147 @@
-/* Reset CSS cơ bản */
+/* Tông màu chủ đạo của Project 1 */
+:root {
+  --primary: #d97706;
+  --primary-hover: #b45309;
+  --bg-page: #fef08a;
+  --card-bg: #ffffff;
+  --text-main: #1e293b;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafaf9;
+  color: var(--text-main);
   line-height: 1.6;
-  background-color: #f4f7f6;
-  color: #333;
 }
 
-/* Header */
-header {
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-  color: #fff;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-header h1 {
-  margin-bottom: 0.5rem;
-}
-
-/* Layout Container */
 .container {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-/* Grid hiển thị các khái niệm */
-.concept-grid {
+header {
+  background: linear-gradient(135deg, #b45309, var(--primary));
+  color: white;
+  text-align: center;
+  padding: 35px 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+header h1 { font-size: 2.2rem; margin-bottom: 5px; }
+header p { opacity: 0.9; font-size: 1.05rem; }
+
+/* Bố cục Grid 3 cột tự động co giãn thông minh */
+.grid-3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 25px;
+  margin-top: 40px;
 }
 
-/* Card */
-.card {
-  background: #fff;
-  padding: 1.5rem;
+.concept-card {
+  background: var(--card-bg);
+  padding: 25px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e7e5e4;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.concept-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
-.card h2 {
-  color: #1e3c72;
-  margin-bottom: 0.75rem;
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #fef3c7;
+  color: var(--primary-hover);
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.concept-card h3 {
+  color: #7c2d12;
   font-size: 1.3rem;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 0.5rem;
+  margin-bottom: 12px;
+  padding-right: 35px;
 }
 
-/* Vùng tương tác JS */
-.interactive-zone {
+.concept-card p {
+  color: #44403c;
+  font-size: 0.95rem;
+  text-align: justify;
+}
+
+/* Phần tương tác */
+.action-section {
   text-align: center;
-  margin-top: 3rem;
-  padding: 1.5rem;
-  background: #eef2f3;
+  margin: 50px 0;
+  padding: 25px;
+  background: #fff7ed;
   border-radius: 8px;
+  border: 1px dashed #fdba74;
 }
 
-button {
-  background-color: #2a5298;
+.btn-primary {
+  background-color: var(--primary);
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
+  padding: 12px 24px;
   font-size: 1rem;
-  border-radius: 5px;
+  font-weight: bold;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.2s;
 }
 
-button:hover {
-  background-color: #1e3c72;
+.btn-primary:hover {
+  background-color: var(--primary-hover);
 }
 
-.hidden {
+.hidden-text {
   display: none;
 }
 
-#welcome-message {
-  margin-top: 1rem;
+.show-text {
+  display: block;
+  margin-top: 20px;
+  color: #c2410c;
   font-weight: bold;
-  color: #2a5298;
-  animation: fadeIn 0.5s ease-in;
+  font-size: 1.1rem;
+  animation: fadeIn 0.4s ease;
 }
 
-/* Footer */
 footer {
   text-align: center;
-  padding: 1.5rem;
-  background: #333;
-  color: #fff;
-  margin-top: 2rem;
+  padding: 30px 0;
+  margin-top: 20px;
 }
 
-/* Hiệu ứng đơn giản */
+.back-home {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.back-home:hover {
+  text-decoration: underline;
+}
+
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
