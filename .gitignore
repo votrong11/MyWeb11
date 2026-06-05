@@ -22,3 +22,7 @@ git push
 git add README.md
 git commit -m "Cap nhat code vao file README chinh"
 git push
+
+git add README.md
+git commit -m "update"
+git push origin main
