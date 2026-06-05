@@ -1,7 +1,6 @@
 # 🎓 HỒ SƠ SINH VIÊN & BÁO CÁO HỌC TẬP
 
-> **Bài tập cá nhân / Hồ sơ học tập**  
-> **Sinh viên thực hiện:** Võ Văn Trọng 
+> **Bài tập cá nhân / Hồ sơ học tập** > **Sinh viên thực hiện:** Võ Văn Trọng 
 > **Mã số sinh viên:** CD-CDCNTT19A38 
 
 ---
@@ -20,8 +19,7 @@
 
 ### 🎯 Mục tiêu của dự án này
 * **Về kiến thức:** Hệ thống hóa và trình bày rõ ràng các khái niệm cốt lõi ban đầu của ngành Web bao gồm: *Internet, Web (WWW), Website, Trang web (Web page), Browser (Trình duyệt)*, và *Server (Máy chủ)*.
-* **Về kỹ năng:** 
-  * Tự tay xây dựng cấu trúc trang bằng HTML5, thiết kế giao diện bằng CSS3 (Grid/Flexbox) giúp trang hiển thị tốt trên cả máy tính lẫn điện thoại.
+* **Về kỹ năng:** * Tự tay xây dựng cấu trúc trang bằng HTML5, thiết kế giao diện bằng CSS3 (Grid/Flexbox) giúp trang hiển thị tốt trên cả máy tính lẫn điện thoại.
   * Ứng dụng JavaScript cơ bản để tạo hiệu ứng tương tác (ẩn/hiện thông điệp) trực tiếp trên trang.
   * Thành thạo quy trình khởi tạo repository, quản lý phiên bản bằng Git và đưa trang web lên môi trường Internet thực tế qua **GitHub Pages**.
 
@@ -54,8 +52,9 @@
 * **Kết quả đạt được:** Biết cách chia bố cục (Layout), làm giao diện phản hồi (Responsive) trên điện thoại và máy tính.
 * **Môi trường chạy thử nghiệm:** `[(http://127.0.0.1:5500/text.html)] (Live Server)
 
-### 🔗 Dự án 2: Website nhập môn Web căn bản (Mini-project 1)
-* **Xem trang web chạy thực tế trên internet():** [Bấm vào đây để xem sản phẩm GitHub Pages của em](https://votrong11.github.io/MyWeb7/)
+### 🔗 Dự án 2: Website nhập môn Web căn bản (Mini-project 1) & (Mini-project 2)
+* **Xem sản phẩm Mini-project 1:** [Bấm vào đây để xem trang Web căn bản](https://votrong11.github.io/MyWeb7/)
+* **Xem sản phẩm Mini-project 2:** [Bấm vào đây để xem trang URL Explorer](https://votrong11.github.io/MyWeb7/)
 
 ---
 
